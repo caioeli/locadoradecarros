@@ -29,31 +29,32 @@ namespace locadoradecarros.View
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaLocadoradecarros));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.pesquisarPorAnoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pesquisarPorModeloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pesquisarPorPreçoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pesquisarPorPreçoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.buttoncadscarro = new System.Windows.Forms.Button();
+            this.buttonaltecar = new System.Windows.Forms.Button();
+            this.buttondeletecar = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.Transparent;
+            this.menuStrip1.Font = new System.Drawing.Font("Swis721 BlkCn BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.pesquisarPorAnoToolStripMenuItem,
             this.pesquisarPorModeloToolStripMenuItem,
             this.pesquisarPorPreçoToolStripMenuItem,
             this.pesquisarPorPreçoToolStripMenuItem1,
-            this.toolStripMenuItem1,
-            this.toolStripMenuItem2});
+            this.toolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(618, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(787, 27);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -61,78 +62,89 @@ namespace locadoradecarros.View
             // pesquisarPorAnoToolStripMenuItem
             // 
             this.pesquisarPorAnoToolStripMenuItem.Name = "pesquisarPorAnoToolStripMenuItem";
-            this.pesquisarPorAnoToolStripMenuItem.Size = new System.Drawing.Size(115, 20);
+            this.pesquisarPorAnoToolStripMenuItem.Size = new System.Drawing.Size(141, 23);
             this.pesquisarPorAnoToolStripMenuItem.Text = "Pesquisar por Ano";
             this.pesquisarPorAnoToolStripMenuItem.Click += new System.EventHandler(this.pesquisarPorAnoToolStripMenuItem_Click);
             // 
             // pesquisarPorModeloToolStripMenuItem
             // 
             this.pesquisarPorModeloToolStripMenuItem.Name = "pesquisarPorModeloToolStripMenuItem";
-            this.pesquisarPorModeloToolStripMenuItem.Size = new System.Drawing.Size(134, 20);
+            this.pesquisarPorModeloToolStripMenuItem.Size = new System.Drawing.Size(165, 23);
             this.pesquisarPorModeloToolStripMenuItem.Text = "Pesquisar por Modelo";
             this.pesquisarPorModeloToolStripMenuItem.Click += new System.EventHandler(this.pesquisarPorModeloToolStripMenuItem_Click);
             // 
             // pesquisarPorPreçoToolStripMenuItem
             // 
             this.pesquisarPorPreçoToolStripMenuItem.Name = "pesquisarPorPreçoToolStripMenuItem";
-            this.pesquisarPorPreçoToolStripMenuItem.Size = new System.Drawing.Size(126, 20);
+            this.pesquisarPorPreçoToolStripMenuItem.Size = new System.Drawing.Size(159, 23);
             this.pesquisarPorPreçoToolStripMenuItem.Text = "Pesquisar por Marca";
             // 
             // pesquisarPorPreçoToolStripMenuItem1
             // 
             this.pesquisarPorPreçoToolStripMenuItem1.Name = "pesquisarPorPreçoToolStripMenuItem1";
-            this.pesquisarPorPreçoToolStripMenuItem1.Size = new System.Drawing.Size(123, 20);
+            this.pesquisarPorPreçoToolStripMenuItem1.Size = new System.Drawing.Size(155, 23);
             this.pesquisarPorPreçoToolStripMenuItem1.Text = "Pesquisar por Preço";
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(115, 20);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(149, 23);
             this.toolStripMenuItem1.Text = "                                ";
             // 
-            // toolStripMenuItem2
+            // buttoncadscarro
             // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(207, 20);
-            this.toolStripMenuItem2.Text = " Cadastrar carro                                   ";
+            this.buttoncadscarro.BackColor = System.Drawing.Color.Red;
+            this.buttoncadscarro.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttoncadscarro.BackgroundImage")));
+            this.buttoncadscarro.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttoncadscarro.Font = new System.Drawing.Font("Swis721 BlkCn BT", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttoncadscarro.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buttoncadscarro.Location = new System.Drawing.Point(563, 326);
+            this.buttoncadscarro.Name = "buttoncadscarro";
+            this.buttoncadscarro.Size = new System.Drawing.Size(130, 44);
+            this.buttoncadscarro.TabIndex = 3;
+            this.buttoncadscarro.Text = "Cadastrar Carro";
+            this.buttoncadscarro.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // buttonaltecar
             // 
-            this.button1.Location = new System.Drawing.Point(408, 334);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(126, 45);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Cadastrar Carro";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonaltecar.BackColor = System.Drawing.Color.Silver;
+            this.buttonaltecar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonaltecar.BackgroundImage")));
+            this.buttonaltecar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonaltecar.Font = new System.Drawing.Font("Swis721 BlkCn BT", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonaltecar.Location = new System.Drawing.Point(94, 328);
+            this.buttonaltecar.Name = "buttonaltecar";
+            this.buttonaltecar.Size = new System.Drawing.Size(125, 44);
+            this.buttonaltecar.TabIndex = 4;
+            this.buttonaltecar.Text = "Alterar Carro";
+            this.buttonaltecar.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // buttondeletecar
             // 
-            this.button2.Location = new System.Drawing.Point(69, 334);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(126, 45);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Alterar Carro";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(242, 334);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(126, 45);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Deletar Carro";
-            this.button3.UseVisualStyleBackColor = true;
+            this.buttondeletecar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+            this.buttondeletecar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttondeletecar.BackgroundImage")));
+            this.buttondeletecar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttondeletecar.Font = new System.Drawing.Font("Swis721 BlkCn BT", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttondeletecar.Location = new System.Drawing.Point(325, 326);
+            this.buttondeletecar.Name = "buttondeletecar";
+            this.buttondeletecar.Size = new System.Drawing.Size(133, 44);
+            this.buttondeletecar.TabIndex = 5;
+            this.buttondeletecar.Text = "Deletar Carro";
+            this.buttondeletecar.UseVisualStyleBackColor = false;
             // 
             // TelaLocadoradecarros
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScroll = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(618, 391);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.BackgroundImage = global::locadoradecarros.Properties.Resources.Logo_Locadora__1_;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ClientSize = new System.Drawing.Size(787, 384);
+            this.Controls.Add(this.buttondeletecar);
+            this.Controls.Add(this.buttonaltecar);
+            this.Controls.Add(this.buttoncadscarro);
             this.Controls.Add(this.menuStrip1);
+            this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "TelaLocadoradecarros";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -153,8 +165,8 @@ namespace locadoradecarros.View
         private System.Windows.Forms.ToolStripMenuItem pesquisarPorPreçoToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button buttoncadscarro;
+        private System.Windows.Forms.Button buttonaltecar;
+        private System.Windows.Forms.Button buttondeletecar;
     }
 }

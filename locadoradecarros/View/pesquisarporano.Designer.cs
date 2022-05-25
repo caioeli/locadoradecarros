@@ -29,161 +29,122 @@ namespace locadoradecarros.View
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.button1 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(16, 139);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Ano : ";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(16, 198);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(54, 15);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Modelo :";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(16, 257);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(46, 15);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Marca :";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(16, 319);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(43, 15);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Preço :";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(16, 375);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(95, 15);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Disponibilidade :";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(240, 9);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Swis721 BlkCn BT", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(32, 25);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 15);
+            this.label2.Size = new System.Drawing.Size(198, 39);
             this.label2.TabIndex = 1;
             this.label2.Text = "Digite o Ano :";
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(321, 118);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(107, 15);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Imagem do carro : ";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(240, 27);
+            this.textBox1.Location = new System.Drawing.Point(236, 36);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(79, 23);
+            this.textBox1.Size = new System.Drawing.Size(111, 23);
             this.textBox1.TabIndex = 8;
             // 
-            // textBox2
+            // dataGridView1
             // 
-            this.textBox2.Location = new System.Drawing.Point(53, 136);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(78, 23);
-            this.textBox2.TabIndex = 9;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column4,
+            this.Column5,
+            this.Column6,
+            this.Column3});
+            this.dataGridView1.Location = new System.Drawing.Point(12, 123);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.Size = new System.Drawing.Size(841, 315);
+            this.dataGridView1.TabIndex = 9;
             // 
-            // textBox3
+            // Column1
             // 
-            this.textBox3.Location = new System.Drawing.Point(68, 195);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(122, 23);
-            this.textBox3.TabIndex = 10;
+            this.Column1.HeaderText = "MODELO";
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 120;
             // 
-            // textBox4
+            // Column2
             // 
-            this.textBox4.Location = new System.Drawing.Point(60, 254);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(130, 23);
-            this.textBox4.TabIndex = 11;
+            this.Column2.HeaderText = "ANO";
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 80;
             // 
-            // textBox5
+            // Column4
             // 
-            this.textBox5.Location = new System.Drawing.Point(60, 316);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 23);
-            this.textBox5.TabIndex = 12;
+            this.Column4.HeaderText = "PREÇO";
+            this.Column4.Name = "Column4";
             // 
-            // textBox6
+            // Column5
             // 
-            this.textBox6.Location = new System.Drawing.Point(111, 372);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(130, 23);
-            this.textBox6.TabIndex = 13;
+            this.Column5.HeaderText = "MARCA";
+            this.Column5.Name = "Column5";
+            this.Column5.Width = 110;
             // 
-            // pictureBox1
+            // Column6
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(259, 136);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(272, 259);
-            this.pictureBox1.TabIndex = 15;
-            this.pictureBox1.TabStop = false;
+            this.Column6.HeaderText = "DISPONIBILIDADE";
+            this.Column6.Name = "Column6";
+            this.Column6.Width = 120;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "IMAGEM";
+            this.Column3.Name = "Column3";
+            this.Column3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Column3.Width = 260;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Silver;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Swis721 BlkCn BT", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button1.Location = new System.Drawing.Point(379, 19);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(129, 54);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "PESQUISAR";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pesquisarporano
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(561, 450);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.BackColor = System.Drawing.Color.Red;
+            this.BackgroundImage = global::locadoradecarros.Properties.Resources.MicrosoftTeams_image;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ClientSize = new System.Drawing.Size(865, 450);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.DoubleBuffered = true;
             this.Name = "pesquisarporano";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "pesquisarporano";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -205,5 +166,13 @@ namespace locadoradecarros.View
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewImageColumn Column3;
+        private System.Windows.Forms.Button button1;
     }
 }
