@@ -50,13 +50,13 @@ namespace locadoradecarros.controller
                 }
 
             }
-            catch (Exception)
+            catch(Exception)
             {
                 throw;
             }
         }
 
-        public void deletarcarro()
+        public void Deletarcarro()
         {
             SqlConnection cn = new SqlConnection(conexaoBD.conectar());
             SqlCommand cmd = new SqlCommand("pDeletar", cn);
@@ -122,5 +122,160 @@ namespace locadoradecarros.controller
             }
 
         }
+
+        public static BindingSource pesquisaranocarro()
+        {
+            SqlConnection cn = new SqlConnection(conexaoBD.conectar());
+            SqlCommand cmd = new SqlCommand("pBuscarano", cn);
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            cmd.Parameters.AddWithValue("@ano", locadora.Ano);
+            cn.Open();
+            cmd.ExecuteNonQuery();
+
+            SqlDataAdapter sqlData = new SqlDataAdapter(cmd);
+
+            DataTable table = new DataTable();
+
+            sqlData.Fill(table);
+
+            BindingSource dados = new BindingSource();
+            dados.DataSource = table;
+
+            return dados;
+
+        }
+
+        public static BindingSource pesquisarmodelo()
+        {
+            SqlConnection cn = new SqlConnection(conexaoBD.conectar());
+            SqlCommand cmd = new SqlCommand("pBuscarmodelo", cn);
+            cmd.CommandType = CommandType.StoredProcedure;
+
+
+
+            cmd.Parameters.AddWithValue("@modelo", locadora.Modelo);
+            cn.Open();
+            cmd.ExecuteNonQuery();
+
+
+
+            SqlDataAdapter sqlData = new SqlDataAdapter(cmd);
+
+
+
+            DataTable table = new DataTable();
+
+
+
+            sqlData.Fill(table);
+
+
+
+            BindingSource dados = new BindingSource();
+            dados.DataSource = table;
+
+
+
+            return dados;
+
+
+
+        }
+
+        public static BindingSource pesquisarmarcacarro()
+        {
+            SqlConnection cn = new SqlConnection(conexaoBD.conectar());
+            SqlCommand cmd = new SqlCommand("pBuscarmarca", cn);
+            cmd.CommandType = CommandType.StoredProcedure;
+
+
+
+            cmd.Parameters.AddWithValue("@marca", locadora.Marca);
+            cn.Open();
+            cmd.ExecuteNonQuery();
+
+
+
+            SqlDataAdapter sqlData = new SqlDataAdapter(cmd);
+
+
+
+            DataTable table = new DataTable();
+
+
+
+            sqlData.Fill(table);
+
+
+
+            BindingSource dados = new BindingSource();
+            dados.DataSource = table;
+
+
+
+            return dados;
+        }
+        public static BindingSource pesquisarprecocarro()
+        {
+            SqlConnection cn = new SqlConnection(conexaoBD.conectar());
+            SqlCommand cmd = new SqlCommand("pBuscarpreco", cn);
+            cmd.CommandType = CommandType.StoredProcedure;
+
+
+
+            cmd.Parameters.AddWithValue("@preco", locadora.Preco);
+            cn.Open();
+            cmd.ExecuteNonQuery();
+
+
+
+            SqlDataAdapter sqlData = new SqlDataAdapter(cmd);
+
+
+
+            DataTable table = new DataTable();
+
+
+
+            sqlData.Fill(table);
+
+
+
+            BindingSource dados = new BindingSource();
+            dados.DataSource = table;
+
+
+
+            return dados;
+        }
+
+        public void deletarcarro()
+        {
+            SqlConnection cn = new SqlConnection(conexaoBD.conectar());
+            SqlCommand cmd = new SqlCommand("pDeletar", cn);
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            try
+            {
+                cmd.Parameters.AddWithValue("@idcarro", locadora.Idcarro);
+                cn.Open();
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Carro excluido com sucesso", "Exclusção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            catch(Exception)
+            {
+                MessageBox.Show("O carro não pode ser excluido", "Atenção!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+            finally
+            {
+                if(cn.State != ConnectionState.Closed)
+                {
+                    cn.Close();
+                }
+            }
+        }
     }
+
 }

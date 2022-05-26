@@ -78,12 +78,14 @@ namespace locadoradecarros.View
             this.pesquisarPorPreçoToolStripMenuItem.Name = "pesquisarPorPreçoToolStripMenuItem";
             this.pesquisarPorPreçoToolStripMenuItem.Size = new System.Drawing.Size(159, 23);
             this.pesquisarPorPreçoToolStripMenuItem.Text = "Pesquisar por Marca";
+            this.pesquisarPorPreçoToolStripMenuItem.Click += new System.EventHandler(this.pesquisarPorPreçoToolStripMenuItem_Click);
             // 
             // pesquisarPorPreçoToolStripMenuItem1
             // 
             this.pesquisarPorPreçoToolStripMenuItem1.Name = "pesquisarPorPreçoToolStripMenuItem1";
             this.pesquisarPorPreçoToolStripMenuItem1.Size = new System.Drawing.Size(155, 23);
             this.pesquisarPorPreçoToolStripMenuItem1.Text = "Pesquisar por Preço";
+            this.pesquisarPorPreçoToolStripMenuItem1.Click += new System.EventHandler(this.pesquisarPorPreçoToolStripMenuItem1_Click);
             // 
             // toolStripMenuItem1
             // 
@@ -104,6 +106,7 @@ namespace locadoradecarros.View
             this.buttoncadscarro.TabIndex = 3;
             this.buttoncadscarro.Text = "Cadastrar Carro";
             this.buttoncadscarro.UseVisualStyleBackColor = false;
+            this.buttoncadscarro.Click += new System.EventHandler(this.buttoncadscarro_Click);
             // 
             // buttonaltecar
             // 
@@ -117,6 +120,7 @@ namespace locadoradecarros.View
             this.buttonaltecar.TabIndex = 4;
             this.buttonaltecar.Text = "Alterar Carro";
             this.buttonaltecar.UseVisualStyleBackColor = false;
+            this.buttonaltecar.Click += new System.EventHandler(this.buttonaltecar_Click);
             // 
             // buttondeletecar
             // 
@@ -130,6 +134,7 @@ namespace locadoradecarros.View
             this.buttondeletecar.TabIndex = 5;
             this.buttondeletecar.Text = "Deletar Carro";
             this.buttondeletecar.UseVisualStyleBackColor = false;
+            this.buttondeletecar.Click += new System.EventHandler(this.buttondeletecar_Click);
             // 
             // TelaLocadoradecarros
             // 
