@@ -276,6 +276,39 @@ namespace locadoradecarros.controller
                 }
             }
         }
+
+        public void pesquisarlocadora()
+        {
+            SqlConnection cn = new SqlConnection(conexaoBD.conectar());
+            SqlCommand cmd = new SqlCommand("pBuscarcarro", cn);
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            try
+            {
+                cmd.Parameters.AddWithValue("@idcarro", locadora.Idcarro);
+                cn.Open();
+
+                var arrayDados = cmd.ExecuteReader();
+
+                if (arrayDados.Read())
+                {
+                    locadora.Idcarro = Convert.ToInt32(arrayDados["idcarro"]);
+                    locadora.Modelo = arrayDados["modelo"].ToString();
+                    locadora.Marca = arrayDados["marca"].ToString();
+                    locadora.Ano = arrayDados["ano"].ToString();
+                    locadora.Preco = arrayDados["preco"].ToString();
+                    locadora.Disponivel = arrayDados["diponivel"].ToString();
+                }else
+                {
+                    MessageBox.Show("carro nao localizado", "Atençao!!!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    locadora.Retorno = "nao";
+                }
+
+            }catch(Exception e)
+            {
+                MessageBox.Show(e.Message,"erro",MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 
 }

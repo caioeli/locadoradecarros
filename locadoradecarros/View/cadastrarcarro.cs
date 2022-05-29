@@ -32,7 +32,7 @@ namespace locadoradecarros.View
 
         private void buttonfazercadastrar_Click(object sender, EventArgs e)
         {
-            if(textBoxmodelo.Text == "" || textBoxmarca.Text == "" || textBoxdis.Text == "" || textBoxpreco.Text == "" || textBoxano.Text == "") 
+            if(textBoxmodelo.Text == "" || textBoxmarca.Text == "" || textBoxdis.Text == "" || textBoxpreco.Text == "" || tbanoaltdel.Text == "") 
             {
                 MessageBox.Show("Digite todos os dados", "Atenção!!!",
                     MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -40,7 +40,7 @@ namespace locadoradecarros.View
                 return;
             }
 
-            locadora.Ano = textBoxano.Text;
+            locadora.Ano = tbanoaltdel.Text;
             locadora.Modelo = textBoxmodelo.Text;
             locadora.Marca = textBoxmarca.Text;
             locadora.Preco = textBoxpreco.Text;

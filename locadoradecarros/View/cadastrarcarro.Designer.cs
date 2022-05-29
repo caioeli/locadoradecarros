@@ -36,7 +36,7 @@ namespace locadoradecarros.View
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBoxano = new System.Windows.Forms.TextBox();
+            this.tbanoaltdel = new System.Windows.Forms.TextBox();
             this.textBoxmodelo = new System.Windows.Forms.TextBox();
             this.textBoxmarca = new System.Windows.Forms.TextBox();
             this.textBoxpreco = new System.Windows.Forms.TextBox();
@@ -55,11 +55,11 @@ namespace locadoradecarros.View
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Swis721 BlkCn BT", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(292, 41);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(225, 35);
+            this.label1.Size = new System.Drawing.Size(306, 42);
             this.label1.TabIndex = 0;
             this.label1.Text = "Cadastre o carro ";
             // 
@@ -70,7 +70,7 @@ namespace locadoradecarros.View
             this.label2.Location = new System.Drawing.Point(14, 160);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 22);
+            this.label2.Size = new System.Drawing.Size(67, 29);
             this.label2.TabIndex = 1;
             this.label2.Text = "Ano :";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -82,7 +82,7 @@ namespace locadoradecarros.View
             this.label3.Location = new System.Drawing.Point(14, 233);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(78, 22);
+            this.label3.Size = new System.Drawing.Size(107, 29);
             this.label3.TabIndex = 2;
             this.label3.Text = "Modelo :";
             // 
@@ -93,7 +93,7 @@ namespace locadoradecarros.View
             this.label4.Location = new System.Drawing.Point(14, 317);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(77, 22);
+            this.label4.Size = new System.Drawing.Size(97, 29);
             this.label4.TabIndex = 3;
             this.label4.Text = "Marca : ";
             // 
@@ -104,7 +104,7 @@ namespace locadoradecarros.View
             this.label5.Location = new System.Drawing.Point(14, 397);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(66, 22);
+            this.label5.Size = new System.Drawing.Size(89, 29);
             this.label5.TabIndex = 4;
             this.label5.Text = "Preço :";
             // 
@@ -114,25 +114,25 @@ namespace locadoradecarros.View
             this.label6.Location = new System.Drawing.Point(16, 500);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(143, 22);
+            this.label6.Size = new System.Drawing.Size(194, 29);
             this.label6.TabIndex = 5;
             this.label6.Text = "Disponibilidade :";
             // 
-            // textBoxano
+            // tbanoaltdel
             // 
-            this.textBoxano.Location = new System.Drawing.Point(64, 155);
-            this.textBoxano.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxano.Name = "textBoxano";
-            this.textBoxano.Size = new System.Drawing.Size(84, 30);
-            this.textBoxano.TabIndex = 6;
-            this.textBoxano.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.tbanoaltdel.Location = new System.Drawing.Point(81, 155);
+            this.tbanoaltdel.Margin = new System.Windows.Forms.Padding(4);
+            this.tbanoaltdel.Name = "tbanoaltdel";
+            this.tbanoaltdel.Size = new System.Drawing.Size(84, 34);
+            this.tbanoaltdel.TabIndex = 6;
+            this.tbanoaltdel.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBoxmodelo
             // 
             this.textBoxmodelo.Location = new System.Drawing.Point(92, 229);
             this.textBoxmodelo.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxmodelo.Name = "textBoxmodelo";
-            this.textBoxmodelo.Size = new System.Drawing.Size(224, 30);
+            this.textBoxmodelo.Size = new System.Drawing.Size(224, 34);
             this.textBoxmodelo.TabIndex = 7;
             // 
             // textBoxmarca
@@ -140,7 +140,7 @@ namespace locadoradecarros.View
             this.textBoxmarca.Location = new System.Drawing.Point(81, 312);
             this.textBoxmarca.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxmarca.Name = "textBoxmarca";
-            this.textBoxmarca.Size = new System.Drawing.Size(235, 30);
+            this.textBoxmarca.Size = new System.Drawing.Size(235, 34);
             this.textBoxmarca.TabIndex = 8;
             // 
             // textBoxpreco
@@ -148,7 +148,7 @@ namespace locadoradecarros.View
             this.textBoxpreco.Location = new System.Drawing.Point(78, 395);
             this.textBoxpreco.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxpreco.Name = "textBoxpreco";
-            this.textBoxpreco.Size = new System.Drawing.Size(165, 30);
+            this.textBoxpreco.Size = new System.Drawing.Size(165, 34);
             this.textBoxpreco.TabIndex = 9;
             this.textBoxpreco.Text = "R$";
             // 
@@ -157,7 +157,7 @@ namespace locadoradecarros.View
             this.textBoxdisponibilidade.Location = new System.Drawing.Point(147, 496);
             this.textBoxdisponibilidade.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxdisponibilidade.Name = "textBoxdisponibilidade";
-            this.textBoxdisponibilidade.Size = new System.Drawing.Size(171, 30);
+            this.textBoxdisponibilidade.Size = new System.Drawing.Size(171, 34);
             this.textBoxdisponibilidade.TabIndex = 10;
             // 
             // buttonfazercadastrar
@@ -187,11 +187,11 @@ namespace locadoradecarros.View
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Swis721 BlkCn BT", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label7.Location = new System.Drawing.Point(528, 140);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(176, 25);
+            this.label7.Size = new System.Drawing.Size(239, 31);
             this.label7.TabIndex = 13;
             this.label7.Text = "Imagem do carro : ";
             // 
@@ -214,7 +214,7 @@ namespace locadoradecarros.View
             this.textBoxdis.Location = new System.Drawing.Point(172, 443);
             this.textBoxdis.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxdis.Name = "textBoxdis";
-            this.textBoxdis.Size = new System.Drawing.Size(127, 30);
+            this.textBoxdis.Size = new System.Drawing.Size(127, 34);
             this.textBoxdis.TabIndex = 16;
             // 
             // D
@@ -224,13 +224,13 @@ namespace locadoradecarros.View
             this.D.Location = new System.Drawing.Point(16, 446);
             this.D.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.D.Name = "D";
-            this.D.Size = new System.Drawing.Size(148, 22);
+            this.D.Size = new System.Drawing.Size(200, 29);
             this.D.TabIndex = 15;
             this.D.Text = "Disponibilidade : ";
             // 
             // cadastrarcarro
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
@@ -247,7 +247,7 @@ namespace locadoradecarros.View
             this.Controls.Add(this.textBoxpreco);
             this.Controls.Add(this.textBoxmarca);
             this.Controls.Add(this.textBoxmodelo);
-            this.Controls.Add(this.textBoxano);
+            this.Controls.Add(this.tbanoaltdel);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -255,7 +255,7 @@ namespace locadoradecarros.View
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
-            this.Font = new System.Drawing.Font("Swis721 BlkCn BT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "cadastrarcarro";
@@ -276,7 +276,7 @@ namespace locadoradecarros.View
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBoxano;
+        private System.Windows.Forms.TextBox tbanoaltdel;
         private System.Windows.Forms.TextBox textBoxmodelo;
         private System.Windows.Forms.TextBox textBoxmarca;
         private System.Windows.Forms.TextBox textBoxpreco;
